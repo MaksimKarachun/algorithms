@@ -17,8 +17,11 @@ public class BinarySearchTest extends TestCase {
     }
 
     public void testBinarySearch(){
-        int actual = binarySearch.search("fedor");
-        int expected = 2;
+        int actual1 = binarySearch.search("fedor"); //expected 2
+        int actual2 = binarySearch.search("");      //expected -1
+        int actual3 = binarySearch.search("zzz");   //expected -1
+        int actual = actual1 + actual2 + actual3;
+        int expected = 0;
         assertEquals(expected, actual);
     }
 

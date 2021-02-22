@@ -26,7 +26,7 @@ public class BinarySearch
             return middle;
         }
         //если последний элемент не равен искомому то возвращаем -1
-        if (from == to){
+        if (middle == list.size() - 1 || middle == 0){
             return -1;
         }
         if (comparison > 0){
